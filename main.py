@@ -212,3 +212,5 @@ st.write("App built by: Praveen · Basic demo")
 if st.button("Download sample prediction input CSV"):
     sample = pd.DataFrame([ {c: (df[c].median() if c in num_cols else (label_encoders[c].classes_[0] if c in label_encoders else "")) for c in input_cols} ])
     st.download_button("Download sample input", data=sample.to_csv(index=False), file_name="sample_input.csv", mime="text/csv")
+
+print("praveen")
